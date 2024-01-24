@@ -6,59 +6,49 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
     <title>Restaurante de Boneless</title>
 </head>
-<body>
+<body class="bg-gray-100">
 
   <!-- Menú de Navegación -->
-    <nav class="bg-red-800 text-white p-4">
-      <div class="container mx-auto flex items-center justify-between">
-      <!-- Logo centrado -->
-      <div class="flex items-center">
-          <img src="logo.png" alt="Logo del Restaurante" class=" h-20">
-      </div>
-
-            <!-- Enlaces del menú -->
-            <div class="hidden md:flex space-x-4">
-                <a href="#" class="hover:text-yellow-500">Inicio</a>
-                <a href="#" class="hover:text-yellow-500">Menú</a>
-                <a href="#" class="hover:text-yellow-500">Contacto</a>
-            </div>
+<nav class="bg-red-800 text-white p-4">
+    <div class="container mx-auto flex items-center justify-between">
+        <!-- Logo centrado -->
+        <div class="flex items-center">
+            <img src="logo.png" alt="Logo del Restaurante" class="h-20">
         </div>
-    </nav>
 
-    <!-- Banner Hero con imagen de fondo -->
-    <section class="bg-gray-800 text-white py-13 bg-cover bg-center" style="background-image: url('bannerhero.jpg');">
-        <div class="container mx-auto text-center">
-            <h1 class="text-4xl font-bold mb-4">Bienvenido al Restaurante de Boneless</h1>
-            <p class="text-lg">¡Deliciosos boneless para satisfacer tus antojos!</p>
-        </div>
-    </section>
 
-    <!-- Menú de Boneless -->
-    <section class="py-12">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold mb-8">Nuestro Menú</h2>
+    </div>
+</nav>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                <!-- Item del menú -->
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <img src="menu1.jpg" alt="Boneless 1" class="mb-4 rounded-md">
-                    <h3 class="text-xl font-bold mb-2">Boneless Especial</h3>
-                    <p class="text-gray-600">Descripción del boneless especial.</p>
-                </div>
+    <!-- Banner Hero con imagen de fondo y superposición -->
+<section class="relative bg-gray-800 text-white py-16 bg-cover bg-center" style="background-image: url('bannerhero.jpg');">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="container mx-auto text-center relative z-10">
+        <h1 class="text-5xl font-bold mb-6">Bienvenido al Restaurante de Boneless</h1>
+        <p class="text-xl">¡Deliciosos boneless para satisfacer tus antojos!</p>
+    </div>
+</section>
 
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <img src="menu2.jpg" alt="Boneless 1" class="mb-4 rounded-md">
-                    <h3 class="text-xl font-bold mb-2">Chess Sticks</h3>
-                    <p class="text-gray-600">Descripción del boneless especial.</p>
-                </div>
+<!-- Menú de Boneless -->
+<section class="py-12">
+<div class="container mx-auto md:mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+    <!-- Item del menú -->
+    <div class="bg-white p-6 rounded-lg shadow-md text-center">
+        <img src="menu1.jpg" alt="Boneless 1" class="mb-4 rounded-md w-full">
+        <h3 class="text-xl font-bold mb-2">Boneless Especial</h3>
+        <p class="text-gray-600">Descripción del boneless especial.</p>
+    </div>
 
-                
+    <div class="bg-white p-6 rounded-lg shadow-md text-center">
+        <img src="menu2.jpg" alt="Boneless 1" class="mb-4 rounded-md w-full">
+        <h3 class="text-xl font-bold mb-2">Chess Sticks</h3>
+        <p class="text-gray-600">Descripción del boneless especial.</p>
+    </div>
 
-                <!-- Repite para cada elemento del menú -->
+    <!-- Repite para cada elemento del menú -->
+</div>
+</section>
 
-            </div>
-        </div>
-    </section>
 
     <!-- Información de Contacto -->
     <section class="bg-gray-800 text-white py-16">
