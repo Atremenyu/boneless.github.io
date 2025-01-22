@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Jam Rings</title>
+    <style>
+        /* Estilos básicos para los elementos */
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            padding-top: 50px;
+            background-color: #f0f0f0; /* Un fondo claro para mejor contraste */
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 30px; /* Espacio debajo del título */
+        }
+
+        .rings {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centra los anillos horizontalmente */
+            margin-bottom: 30px; /* Espacio debajo de los anillos */
+        }
+
+        .ring-1,
+        .ring-2,
+        .ring-3,
+        .ring-4 {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%; /* Hace que los divs sean circulares */
+            border: 2px solid #3498db; /* Color del borde */
+            margin: 5px; /* Espacio entre anillos */
+        }
+
+        .ring-1{
+          width: 100px;
+          height: 100px;
+        }
+        .ring-2{
+          width: 80px;
+          height: 80px;
+        }
+        .ring-3{
+          width: 60px;
+          height: 60px;
+        }
+
+        iframe {
+          margin-top: 20px; /* Espacio arriba del iframe */
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1 class="space-jam">Space Jam</h1>
+
+    <div class="rings">
+        <div class="ring-1"></div>
+        <div class="ring-2"></div>
+        <div class="ring-3"></div>
+        <div class="ring-4"></div>
+    </div>
+
+
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/fZOK-T15wyg?rel=0&start=16" frameborder="0" allowfullscreen></iframe>
+
+</body>
+</html>
